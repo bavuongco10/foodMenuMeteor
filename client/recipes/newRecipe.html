@@ -1,0 +1,10 @@
+<template name="newRecipe">
+    <button class="new-recipe">New recipe</button>
+    {{#if newRecipeMode}}
+        <div class="new-recipe-container">
+            {{>quickForm collection="Recipes" id="insertRecipeForm" type="insert"
+            class="new-recipe-form"}}
+        </div>
+    {{/if}}
+
+</template>
